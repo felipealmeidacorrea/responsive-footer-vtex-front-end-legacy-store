@@ -1,9 +1,10 @@
 body {
-    font-family: segoe UI !important;
     background-color: #F4F6F7;
 }
 
 .fac-footer {
+    font-family: 'Montserrat';
+    text-decoration: none;
     display: flex;
     flex-flow: wrap;
     text-align: center;
@@ -31,7 +32,7 @@ body {
 }
 
 .fac-footer__text__title {
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0;
 }
 
@@ -51,7 +52,7 @@ body {
 }
 
 .subscribe__btn {
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     border: none;
     background-color: #058F49;
@@ -133,6 +134,14 @@ body {
     margin: 0;
 }
 
+/*fac-footer Breakpoint max 299px*/
+@media (max-width: 299px) {
+    .social__logo {
+        width: 20px;
+        max-height: 20px;
+    }
+}
+
 /*fac-footer Breakpoint max 399px*/
 @media (max-width: 399px) {
     .box__mult-content__media {
@@ -147,11 +156,18 @@ body {
     }
 }
 
-/*fac-footer Breakpoint max 299px*/
-@media (max-width: 299px) {
-    .social__logo {
-        width: 20px;
-        max-height: 20px;
+/*fac-footer Breakpoint max 799px*/
+@media (max-width: 799px) {
+    .text-info__body {
+        gap: 15px;
+    }
+    
+    .fac-footer-block__box__text-about {
+        gap: 20px;
+    }
+    
+    .fac-footer__text__title {
+        font-weight: bold;
     }
 }
 
